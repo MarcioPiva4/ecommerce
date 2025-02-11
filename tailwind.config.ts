@@ -9,10 +9,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#000",
+        secondary: "#fff",
+        terciary: "#333333",
+        gray_light: "#666666",
+        background: "#F5F5F5",
+        warning: "#FF4444",
+        bg_button_buy: "#28a745",
+        bg_button_back: "#007bff",
       },
     },
+    screens: {
+      'md': {max: '950px'},
+      'sm': {max: '700px'}
+    }
   },
   plugins: [],
 } satisfies Config;

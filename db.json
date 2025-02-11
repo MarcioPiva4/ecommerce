@@ -1,0 +1,22 @@
+{
+  "category": [
+    { "id": 1, "title": "sapato", "href": "/sapato" },
+    { "id": 2, "title": "camisas", "href": "/camisas" },
+    { "id": 3, "title": "calças", "href": "/calcas"}
+  ],
+  "store": {
+    "name": "Ecommerce",
+    "telefone": "14 99999-9999",
+    "email": "teste@gmail.com",
+    "city": "Garça"
+  },
+  "banners": [],
+  "products": [],
+  "clients": [],
+  "adm": [],
+  "cart": [],
+  "comments": [
+    { "id": 1, "text": "a comment about post 1", "postId": "1" },
+    { "id": 2, "text": "another comment about post 1", "postId": "1" }
+  ]
+}
