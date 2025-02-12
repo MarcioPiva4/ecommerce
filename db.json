@@ -10,8 +10,52 @@
     "email": "teste@gmail.com",
     "city": "Garça"
   },
-  "banners": [],
-  "products": [],
+  "banners": [
+    {
+      "id": 1,
+      "src":"/banners/banner-1.jpg",
+      "title":"teste"
+    },
+    {
+      "id": 2,
+      "src":"/banners/banner-2.jpg",
+      "title":"teste2"
+    },
+    {
+      "id": 3,
+      "src":"/banners/banner-3.jpg",
+      "title":"teste3"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title":"Sapato Preto Social",
+      "images": ["/products/1/sapato.jpg"],
+      "category": "sapato",
+      "categoryId": 1,
+      "link": "/product/sapato-social-preto",
+      "price": "100,00"
+    },
+    {
+      "id": 2,
+      "title":"Camiseta Branca",
+      "images": ["/products/2/camiseta.jpg"],
+      "category": "camisas",
+      "categoryId": 2,
+      "link": "/product/camiseta-branca",
+      "price": "75,00"
+    },
+    {
+      "id": 3,
+      "title":"Calça Jeans",
+      "images": ["/products/3/jeans.jpg"],
+      "category": "calças",
+      "categoryId": 3,
+      "link": "/product/calca-jeans",
+      "price": "99,99"
+    }
+  ],
   "clients": [],
   "adm": [],
   "cart": [],

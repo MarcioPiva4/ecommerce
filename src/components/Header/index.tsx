@@ -9,8 +9,9 @@ import Box from "./Box";
 import { useState } from "react";
 import CartSide from "./Cart";
 import Link from "next/link";
+import { products } from "@/types/products";
 
-export default function Header({ categorys, store }: {categorys: category[]; store: store}){
+export default function Header({ categorys, store, cartProducts }: {categorys: category[]; store: store; cartProducts: products[] }){
 
     const [favoriteHover, setFavoriteHover] = useState<boolean>(false);
     const [userHover, setUserHover] = useState<boolean>(false);
@@ -19,7 +20,7 @@ export default function Header({ categorys, store }: {categorys: category[]; sto
     const isLoggin = false;
 
     return(
-        <header className="flex justify-between pr-10 pl-10 items-center h-[12vh] w-screen fixed border-b-2">
+        <header className="flex justify-between pr-10 pl-10 items-center h-[12vh] w-screen fixed border-b-2 z-10 bg-secondary">
             <Link href={'#'}>
                 <h1 className="text-2xl tracking-[1.5px] font-semibold">{store.name}</h1>
             </Link>
@@ -72,7 +73,7 @@ export default function Header({ categorys, store }: {categorys: category[]; sto
                         <AnimatePresence>
                             {
                                 cartClick &&
-                                <CartSide cartClick={cartClick} setCartClick={setCartClick}></CartSide>
+                                <CartSide cartClick={cartClick} setCartClick={setCartClick} products={cartProducts}></CartSide>
                             }
                         </AnimatePresence>
                     }
@@ -80,7 +81,7 @@ export default function Header({ categorys, store }: {categorys: category[]; sto
 
             </div>
 
-            <Mobile categorys={categorys}></Mobile>
+            <Mobile categorys={categorys} cartClick={cartClick} setCartClick={setCartClick} cartProducts={cartProducts}></Mobile>
         </header>
     )
 }

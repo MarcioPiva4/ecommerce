@@ -1,9 +1,12 @@
+'use client'
 import Overlay from "@/components/Overlay";
 import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
 import {motion} from 'framer-motion';
+import { products } from "@/types/products";
+import Image from "next/image";
 
-export default function CartSide({ setCartClick, cartClick }: { setCartClick: Dispatch<SetStateAction<boolean>>; cartClick: boolean }){
+export default function CartSide({ setCartClick, cartClick, products }: { setCartClick: Dispatch<SetStateAction<boolean>>; cartClick: boolean; products: products[] }){
     return(
         <Overlay>
                 <motion.aside 
@@ -11,7 +14,7 @@ export default function CartSide({ setCartClick, cartClick }: { setCartClick: Di
                     animate={{ x: 0 }}         
                     exit={{ x: '100%' }}    
                     transition={{ duration: 0.5 }} 
-                    className="w-7xl h-screen absolute right-0 bg-background w-[500px] p-5 flex items-center justify-between flex-col pb-10"
+                    className="max-w-[400px] w-7xl h-screen absolute right-0 bg-background w-[500px] p-5 flex items-center justify-between flex-col pb-10"
                 >
                     <div className="flex items-center justify-between px-4 border-b pb-2 border-gray_light w-full">
                         <h1 className="text-terciary text-xl">CART</h1>
@@ -23,9 +26,20 @@ export default function CartSide({ setCartClick, cartClick }: { setCartClick: Di
                     </div>
 
                     <div className="w-full h-full py-5">
-                        <ul>
+                        <ul className="flex flex-col gap-5 max-h-[350px] overflow-y-auto">
                             {
-                                Array.from(['produto1', 'produto2', 'produto3', 'produto4']).map((e, i) => <div key={i}>{e}</div>)
+                                products.map((e) => (
+                                    <li key={e.id}>
+                                        <Link href={e.link} className="flex items-center justify-between">
+                                            <Image className="object-cover w-[100px] h-[100px]" src={e.images[0]} alt={e.title} width={100} height={100}></Image>
+                                            <h2>{e.title}</h2>
+                                            <div>
+                                                <p>Categoria: {e.category} </p>
+                                                <p>Preço: {e.price} </p> 
+                                            </div>
+                                        </Link>
+                                    </li>
+                                ))
                             }
                         </ul>
                     </div>
