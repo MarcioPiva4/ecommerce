@@ -1,5 +1,14 @@
 export default interface banner{
-    id: number;
-    title: string;
-    src: string;
+    slider: {
+        id: number;
+        title: string;
+        src: string;
+        link: string;
+    }[],
+    mosaic: {
+        id: number;
+        title: string;
+        src: string;
+        link: string;
+    }[]
 }

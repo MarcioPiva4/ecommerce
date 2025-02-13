@@ -10,23 +10,49 @@
     "email": "teste@gmail.com",
     "city": "Garça"
   },
-  "banners": [
-    {
-      "id": 1,
-      "src":"/banners/banner-1.jpg",
-      "title":"teste"
-    },
-    {
-      "id": 2,
-      "src":"/banners/banner-2.jpg",
-      "title":"teste2"
-    },
-    {
-      "id": 3,
-      "src":"/banners/banner-3.jpg",
-      "title":"teste3"
-    }
-  ],
+  "banners": {
+      "slider": [
+        {
+          "id": 1,
+          "src":"/banners/slider/banner-1.jpg",
+          "title":"teste",
+          "link":""
+        },
+        {
+          "id": 2,
+          "src":"/banners/slider/banner-2.jpg",
+          "title":"teste2",
+          "link":""
+        },
+        {
+          "id": 3,
+          "src":"/banners/slider/banner-3.jpg",
+          "title":"teste3",
+          "link":""
+        }
+      ],
+      "mosaic": [
+        {
+          "id": 1,
+          "src": "/banners/mosaic/banner-1.jpg",
+          "title": "teste1",
+          "link":"category/calcas"
+        },
+        {
+          "id": 2,
+          "src": "/banners/mosaic/banner-2.jpg",
+          "title": "teste2",
+          "link":"category/camisetas"
+        },
+        {
+          "id": 3,
+          "src": "/banners/mosaic/banner-3.jpg",
+          "title": "teste3",
+          "link":"category/sapato"
+        }
+      ]
+  }
+  ,
   "products": [
     {
       "id": 1,

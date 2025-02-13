@@ -19,8 +19,9 @@ export default async function Home() {
     <>
       <Header categorys={category} store={store} cartProducts={cartProducts}></Header>
       <main className="pt-[12vh]">
-        <Banner banners={banners}></Banner>
+        <Banner banners={banners} type="carrossel"></Banner>
         <AdvantageRuler></AdvantageRuler>
+        <Banner banners={banners} type="mosaic"></Banner>
       </main>
     </>
   );
