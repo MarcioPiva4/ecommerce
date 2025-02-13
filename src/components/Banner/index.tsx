@@ -22,12 +22,12 @@ export default function Banner({ banners }: {banners: banner[] }){
           }}
         className="relative"
       >
-        <button className="swiper-button-prev absolute z-[2] top-[43%] left-[60px] bg-white p-2 rounded-full cursor-pointer">
+        <button className="swiper-button-prev absolute z-[2] top-[43%] left-[60px] bg-white p-2 rounded-full cursor-pointer outline-none transition-all hover:scale-[1.1]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
         </button>
-        <button className="swiper-button-next absolute z-[2] top-[43%] right-[60px] bg-white p-2 rounded-full cursor-pointer">
+        <button className="swiper-button-next absolute z-[2] top-[43%] right-[60px] bg-white p-2 rounded-full cursor-pointer outline-none transition-all hover:scale-[1.1]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>

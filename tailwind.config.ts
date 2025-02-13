@@ -22,7 +22,8 @@ export default {
     },
     screens: {
       'md': {max: '950px'},
-      'sm': {max: '700px'}
+      'sm': {max: '700px'},
+      'xm': {max: '350px'}
     }
   },
   plugins: [],
