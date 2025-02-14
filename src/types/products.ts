@@ -6,4 +6,8 @@ export interface products {
     categoryId: number;
     link: string;
     price: string;
+    priceDiscount: string;
+    description: string;
+    assessment: number | null;
+    warranty: string
 }[]

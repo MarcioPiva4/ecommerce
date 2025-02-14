@@ -51,17 +51,42 @@
           "link":"category/sapato"
         }
       ]
-  }
-  ,
+  },
+  "showcases": [
+    {
+      "id": 1,
+      "title": "Destaques",
+      "products": [1, 2, 3]
+    },
+    {
+      "id": 2,
+      "title": "Novidades",
+      "products": [1, 2]
+    },
+    {
+      "id": 3,
+      "title": "Coleção Exclusiva",
+      "products": [1, 2, 3]
+    },
+    {
+      "id": 4,
+      "title": "Edição Limitada",
+      "products": [1, 2, 3]
+    }
+  ],
   "products": [
     {
       "id": 1,
       "title":"Sapato Preto Social",
-      "images": ["/products/1/sapato.jpg"],
+      "images": ["/products/1/sapato.jpg","/products/1/sapato2.jpg"],
       "category": "sapato",
       "categoryId": 1,
       "link": "/product/sapato-social-preto",
-      "price": "100,00"
+      "price": "100,00",
+      "priceDiscount": "90,00",
+      "assessment": null,
+      "warranty": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur condimentum dui, ut auctor magna pretium pulvinar. Phasellus tincidunt aliquet lectus quis gravida. Proin gravida est eros, vel lacinia ipsum commodo rutrum. Aenean aliquet odio a sem auctor viverra. Donec at nisl interdum, congue dui ac, tristique neque. Vestibulum viverra erat faucibus vestibulum auctor. Nullam at lobortis metus. Nullam ac malesuada nunc. Suspendisse a nulla eleifend, pellentesque felis vel, elementum odio. Donec et ex viverra, vulputate tortor et, porta eros. Duis elementum efficitur mauris ut rutrum. Sed tincidunt nunc sit amet nisi finibus varius. In lectus dolor, feugiat id risus eu, aliquet tempus leo. Aliquam erat volutpat. Mauris vitae dui accumsan, laoreet felis sed, accumsan erat."
     },
     {
       "id": 2,
@@ -70,7 +95,11 @@
       "category": "camisas",
       "categoryId": 2,
       "link": "/product/camiseta-branca",
-      "price": "75,00"
+      "price": "75,00",
+      "priceDiscount": "",
+      "assessment": null,
+      "warranty": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur condimentum dui, ut auctor magna pretium pulvinar. Phasellus tincidunt aliquet lectus quis gravida. Proin gravida est eros, vel lacinia ipsum commodo rutrum. Aenean aliquet odio a sem auctor viverra. Donec at nisl interdum, congue dui ac, tristique neque. Vestibulum viverra erat faucibus vestibulum auctor. Nullam at lobortis metus. Nullam ac malesuada nunc. Suspendisse a nulla eleifend, pellentesque felis vel, elementum odio. Donec et ex viverra, vulputate tortor et, porta eros. Duis elementum efficitur mauris ut rutrum. Sed tincidunt nunc sit amet nisi finibus varius. In lectus dolor, feugiat id risus eu, aliquet tempus leo. Aliquam erat volutpat. Mauris vitae dui accumsan, laoreet felis sed, accumsan erat."
     },
     {
       "id": 3,
@@ -79,7 +108,37 @@
       "category": "calças",
       "categoryId": 3,
       "link": "/product/calca-jeans",
-      "price": "99,99"
+      "price": "99,99",
+      "priceDiscount": "",
+      "assessment": null,
+      "warranty": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur condimentum dui, ut auctor magna pretium pulvinar. Phasellus tincidunt aliquet lectus quis gravida. Proin gravida est eros, vel lacinia ipsum commodo rutrum. Aenean aliquet odio a sem auctor viverra. Donec at nisl interdum, congue dui ac, tristique neque. Vestibulum viverra erat faucibus vestibulum auctor. Nullam at lobortis metus. Nullam ac malesuada nunc. Suspendisse a nulla eleifend, pellentesque felis vel, elementum odio. Donec et ex viverra, vulputate tortor et, porta eros. Duis elementum efficitur mauris ut rutrum. Sed tincidunt nunc sit amet nisi finibus varius. In lectus dolor, feugiat id risus eu, aliquet tempus leo. Aliquam erat volutpat. Mauris vitae dui accumsan, laoreet felis sed, accumsan erat."
+    },
+    {
+      "id": 4,
+      "title":"Calça Jeans",
+      "images": ["/products/3/jeans.jpg"],
+      "category": "calças",
+      "categoryId": 3,
+      "link": "/product/calca-jeans",
+      "price": "99,99",
+      "priceDiscount": "",
+      "assessment": null,
+      "warranty": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur condimentum dui, ut auctor magna pretium pulvinar. Phasellus tincidunt aliquet lectus quis gravida. Proin gravida est eros, vel lacinia ipsum commodo rutrum. Aenean aliquet odio a sem auctor viverra. Donec at nisl interdum, congue dui ac, tristique neque. Vestibulum viverra erat faucibus vestibulum auctor. Nullam at lobortis metus. Nullam ac malesuada nunc. Suspendisse a nulla eleifend, pellentesque felis vel, elementum odio. Donec et ex viverra, vulputate tortor et, porta eros. Duis elementum efficitur mauris ut rutrum. Sed tincidunt nunc sit amet nisi finibus varius. In lectus dolor, feugiat id risus eu, aliquet tempus leo. Aliquam erat volutpat. Mauris vitae dui accumsan, laoreet felis sed, accumsan erat."
+    },
+    {
+      "id": 5,
+      "title":"Calça Jeans",
+      "images": ["/products/3/jeans.jpg"],
+      "category": "calças",
+      "categoryId": 3,
+      "link": "/product/calca-jeans",
+      "price": "99,99",
+      "priceDiscount": "",
+      "assessment": null,
+      "warranty": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur condimentum dui, ut auctor magna pretium pulvinar. Phasellus tincidunt aliquet lectus quis gravida. Proin gravida est eros, vel lacinia ipsum commodo rutrum. Aenean aliquet odio a sem auctor viverra. Donec at nisl interdum, congue dui ac, tristique neque. Vestibulum viverra erat faucibus vestibulum auctor. Nullam at lobortis metus. Nullam ac malesuada nunc. Suspendisse a nulla eleifend, pellentesque felis vel, elementum odio. Donec et ex viverra, vulputate tortor et, porta eros. Duis elementum efficitur mauris ut rutrum. Sed tincidunt nunc sit amet nisi finibus varius. In lectus dolor, feugiat id risus eu, aliquet tempus leo. Aliquam erat volutpat. Mauris vitae dui accumsan, laoreet felis sed, accumsan erat."
     }
   ],
   "clients": [],
